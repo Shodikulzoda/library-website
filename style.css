@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.poisk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #007bff;
+
+}
+
+.input {
+    width: 150%;
+    max-width: 600px;
+    height: 40px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.input-result {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 19px;
+}
+
+.menu a {
+    padding: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    width: calc(33.333% - 40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+}
+
+.card img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #343a40;
+    margin: 0 0 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 0 0 10px;
+}
+
+.card h3.price {
+    font-size: 24px;
+    color: #28a745;
+    text-align: right;
+}
+
+#nenayden {
+    background-color: #007bff;
+    width: 500px;
+    height: 45px;
+
+}
+
+.supportimage {
+    width: 30px;
+
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+
+    a {
+        font-size: 14px;
+    }
+}
+
+.linediv {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 20px auto;
+    width: 1000px;
+}
+
+.linediv .input {
+    flex: 1;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.linediv .supportimage {
+    width: 40px;
+    height: auto;
+    float: left;
+    margin-left: 10px;
+}
+.supportimage{
+    margin-left: 10px;
+}
+.login{
+    width: 55px;
+    
+}
