@@ -18,6 +18,7 @@ body {
     width: 150%;
     max-width: 600px;
     height: 40px;
+
     border: 1px solid #007bff;
     border-radius: 5px;
     padding: 0 10px;
@@ -116,6 +117,21 @@ body {
     .card {
         width: calc(50% - 40px);
     }
+
+    .supportimage {
+        margin-left: 0;
+        margin-bottom: 7px;
+        width: 35px;
+        position: relative;
+        left: 50%;
+    }
+
+    .login {
+        width: 50px;
+        margin-top: -80px;
+        position: relative;
+        left: 50%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -126,6 +142,25 @@ body {
     a {
         font-size: 14px;
     }
+
+    .supportimage {
+        margin-left: 0;
+        margin-bottom: 7px;
+        width: 35px;
+
+        position: relative;
+        left: 50%;
+    }
+
+    .login {
+        width: 50px;
+        margin-top: -80px;
+        position: relative;
+        left: 50%;
+
+
+    }
+
 }
 
 .linediv {
@@ -143,18 +178,22 @@ body {
     border: 1px solid #007bff;
     border-radius: 5px;
     margin-right: 10px;
+
 }
 
-.linediv .supportimage {
-    width: 40px;
-    height: auto;
-    float: left;
-    margin-left: 10px;
+
+.supportimage {
+    margin-left: 0;
+    margin-bottom: 7px;
+    width: 35px;
+
+    position: relative;
+    left: 550%;
 }
-.supportimage{
-    margin-left: 10px;
-}
-.login{
-    width: 55px;
-    
+
+.login {
+    width: 50px;
+    margin-top: -80px;
+    position: relative;
+    left: 550%;
 }

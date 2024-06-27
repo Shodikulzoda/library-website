@@ -25,8 +25,8 @@ require_once 'functions.php';
         } ?>
         <form action="" method="POST">
             <div class="poisk">
-                <div class="linediv">
-                    <input class="input" name="poisk" type="number" maxlength="25" placeholder="Поиск по артикулу...">
+                <div class="photos">
+               
                     <a href="#test1">
                         <image class="supportimage" src='/image/isbarannoe checked.png'></image>
                     </a>
@@ -36,6 +36,9 @@ require_once 'functions.php';
                     <a href="/loginpage/signup.php">
                         <image class="login" src='/image/loginimg.png'></image>
                     </a>
+                </div>
+                <div class="linediv">
+                    <input class="input" name="poisk" type="number" maxlength="25" placeholder="Поиск по артикулу...">
                 </div>
                 <?php
                 $searchText = '';
@@ -48,8 +51,9 @@ require_once 'functions.php';
         </form>
         <div class="menu">
             <?php
+
             $text = fopen("files/janr.csv", "r");
-            echo "<a href='php.php'> асоси </a>";
+            echo "<a href='index.php'> асоси </a>";
             if ($text) {
                 while (($janrcsv = fgetcsv($text, 1000, ";")) !== false) {
                     $id = htmlspecialchars($janrcsv[0]);
@@ -72,6 +76,11 @@ require_once 'functions.php';
                     $allBooks[] = $data;
                 }
                 fclose($file);
+            }
+            list($nomkitob, $janr, $avtor, $narkh, $articul, $opisaniya) = $data;
+            if(empty($nomkitob && $janr && $avtor&&$narkh&& $articul&&$opisaniya))
+            {
+               
             }
             if (!empty($searchText)) {
                 $found = false;
@@ -108,4 +117,5 @@ require_once 'functions.php';
         </div>
     </div>
 </body>
+
 </html>
